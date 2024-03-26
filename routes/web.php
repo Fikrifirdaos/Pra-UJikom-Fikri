@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/admin', function () {
+    return view('dashboard.index');
+});
+Route::get('/checkout', function () {
+    return view('checkout.index');
+});
+Route::get('/product', function () {
+    return view('product.formcreate');
+});
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard.indexUser');
 });
